@@ -1,0 +1,40 @@
+---
+driver_plugin: vagrant
+driver_config:
+  require_chef_omnibus: true
+
+platforms:
+  - name: centos-6.5
+    driver:
+      customize:
+        memory: 512
+      network:
+        - ["forwarded_port", {guest: 80, host: 6580}]
+  - name: ubuntu-12.04
+    driver:
+      customize:
+        memory: 384
+      network:
+        - ["forwarded_port", {guest: 80, host: 1280}]
+  - name: ubuntu-14.04
+    driver:
+      customize:
+        memory: 384
+      network:
+        - ["forwarded_port", {guest: 80, host: 1480}]
+  - name: debian-7.6
+    driver:
+      customize:
+        memory: 384
+      network:
+        - ["forwarded_port", {guest: 80, host: 7680}]
+
+suites:
+  - name: default
+    run_list:
+      - recipe[poweradmin::default]
+    attributes: {}
+  - name: test
+    run_list:
+      - recipe[poweradmin::test]
+    attributes: {}
