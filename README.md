@@ -39,6 +39,7 @@ Should also work with other RHEL and Debian based distos, but not tested yet.
 Here is a block of mysql connection settings - it should be easy to understand what value stands for.
 
 Should be the same, previously used to configure pdns-backend-mysql.
+
 `node["poweradmin"]["hostname"]` = `'localhost'`
 
 `node["poweradmin"]["port"]` = `3306`

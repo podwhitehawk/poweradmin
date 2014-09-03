@@ -108,6 +108,7 @@ end
 
 web_app "poweradmin" do
   server_name node['hostname']
+  server_port node["poweradmin"]["http_port"]
   cookbook 'apache2'
   docroot node["poweradmin"]["install_dir"]
 end
