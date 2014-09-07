@@ -16,3 +16,4 @@ gem 'berkshelf'
 
 gem 'test-kitchen'
 gem 'kitchen-vagrant'
+gem 'kitchen-digitalocean', '~> 0.8.0'

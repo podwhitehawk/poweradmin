@@ -35,6 +35,7 @@ Should also work with other RHEL and Debian based distos, but not tested yet.
 `node["poweradmin"]["package_name"]` - name for local package located in files/default. Default - `poweradmin-2.1.7.tgz`
 
 `node["poweradmin"]["install_dir"]` - Docroot for apache2 where poweradmin will be located. Default - `/var/www/poweradmin`
+`node["poweradmin"]["http_port"]` - port where Poweradmin web panel could be found. Default - `'80'`
 
 Here is a block of mysql connection settings - it should be easy to understand what value stands for.
 

@@ -80,6 +80,7 @@ mysql_connection_info = {
 template "#{node["poweradmin"]["install_dir"]}/inc/config.inc.php" do
   source "config.inc.php.erb"
   variables('session_key' => rand(36**64).to_s(36))
+  action :create_if_missing
 end
 
 # import from a dump files

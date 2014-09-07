@@ -13,5 +13,3 @@ default["poweradmin"]["dbname"] = 'powerdns'
 default["poweradmin"]["type"] = 'mysql'
 
 default["apache"]["listen_ports"] = ["#{node["poweradmin"]["http_port"]}"]
-
-default['apache']['default_modules'] = %w[status alias auth_basic authn_file authz_default authz_groupfile authz_host authz_user autoindex dir env mime negotiation setenvif php5 log_config logio]
