@@ -1,4 +1,5 @@
 # poweradmin cookbook
+[![Build Status](https://secure.travis-ci.org/podwhitehawk/poweradmin.png?branch=master)](http://travis-ci.org/podwhitehawk/poweradmin)
 
 This cookbook is used to install [poweradmin](http://www.poweradmin.org/) - web-based console to manage [PowerDNS](https://www.powerdns.com/).
 
