@@ -31,7 +31,7 @@ Should also work with other RHEL and Debian based distos, but not tested yet.
 
 `node["poweradmin"]["version"]` - version to download. used in `node["poweradmin"]["remote_url"]`. Default - `2.1.7`
 
-`node["poweradmin"]["remote_url"]` - download URL for poweradmin. Default - `http://downloads.sourceforge.net/project/poweradmin/poweradmin-#{node["poweradmin"]["version"]}.tgz`
+`node["poweradmin"]["remote_url"]` - download URL for poweradmin. Default - `https://github.com/poweradmin/poweradmin/archive/v#{node["poweradmin"]["version"]}.tar.gz`
 
 `node["poweradmin"]["package_name"]` - name for local package located in files/default. Default - `poweradmin-2.1.7.tgz`
 

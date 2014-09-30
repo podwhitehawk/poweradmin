@@ -1,6 +1,6 @@
 default["poweradmin"]["remote_install"] = true
 default["poweradmin"]["version"] = '2.1.7'
-default["poweradmin"]["remote_url"] = "http://downloads.sourceforge.net/project/poweradmin/poweradmin-#{node["poweradmin"]["version"]}.tgz"
+default["poweradmin"]["remote_url"] = "https://github.com/poweradmin/poweradmin/archive/v#{node["poweradmin"]["version"]}.tar.gz"
 default["poweradmin"]["package_name"] = 'poweradmin-2.1.7.tgz'
 default["poweradmin"]["install_dir"] = '/var/www/poweradmin'
 default["poweradmin"]["http_port"] = 80
