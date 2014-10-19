@@ -41,7 +41,7 @@ elsif os[:family] == 'RedHat'
 end
 
 
-describe file('/var/www/html/inc/config.inc.php') do
+describe file('/var/www/poweradmin/inc/config.inc.php') do
   it { should be_file }
 end
 
