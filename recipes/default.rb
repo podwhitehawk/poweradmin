@@ -96,15 +96,11 @@ end
 #marker for sql import
 file "/etc/.poweradmin_sql.imported"
 
-# getting md5 hash of user password
-require 'digest/md5'
-user_hash = Digest::MD5.hexdigest(node["poweradmin"]["password"])
-
 # update admin password
 mysql_database "update_admin_password" do
   connection mysql_connection_info
   database_name node["poweradmin"]["dbname"]
-  sql "update users set password = '#{user_hash}' where username = 'admin'"
+  sql "update users set password = '#{getMD5pass?}' where username = 'admin'"
   action :query
 end
 
