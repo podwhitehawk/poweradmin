@@ -22,12 +22,12 @@ platforms:
         memory: 384
       network:
         - ["forwarded_port", {guest: 80, host: 1480}]
-  - name: debian-7.6
+  - name: debian-7.7
     driver:
       customize:
         memory: 384
       network:
-        - ["forwarded_port", {guest: 80, host: 7680}]
+        - ["forwarded_port", {guest: 80, host: 7780}]
   - name: centos-7.0
     driver:
       customize:
